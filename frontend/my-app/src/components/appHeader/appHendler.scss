@@ -1,0 +1,78 @@
+@import '../../style/variables.scss';
+
+.app {
+    &__header {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+        padding: 0 10px; 
+        width: 100%; 
+        height: 98px; 
+        background-color: #f0f0f0; 
+    }
+
+    &__logo {
+        font-size: 50px;
+        font-weight: bold;
+        color: $dark;
+        margin-right: auto; 
+    }
+
+    &__catalog {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        button {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+            background-color: #808080;
+            border-radius: 10px;
+            width: 112px;
+            height: 50px;
+            padding: 0 10px;
+            border: none;
+            cursor: pointer;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        gap: 22px
+        }
+    }
+
+    &__menu {
+        margin-left: auto; // Меню прижимается к правому краю
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px; // Отступ между элементами меню
+            list-style: none; // Убираем маркеры списка
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 8px; // Отступ между иконкой и текстом
+
+                a {
+                    text-decoration: none; // Убираем подчёркивание у ссылок
+                    color: inherit; // Наследуем цвет текста
+                    font-size: 16px;
+
+                    &:hover {
+                        color: $main-color; // Изменение цвета при наведении
+                    }
+                }
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+}
