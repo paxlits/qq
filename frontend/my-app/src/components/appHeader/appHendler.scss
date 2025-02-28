@@ -43,28 +43,28 @@
     }
 
     &__menu {
-        margin-left: auto; // Меню прижимается к правому краю
+        margin-left: auto; 
 
         ul {
             display: flex;
             align-items: center;
-            gap: 20px; // Отступ между элементами меню
-            list-style: none; // Убираем маркеры списка
+            gap: 20px;
+            list-style: none; 
             padding: 0;
             margin: 0;
 
             li {
                 display: flex;
                 align-items: center;
-                gap: 8px; // Отступ между иконкой и текстом
+                gap: 8px; 
 
                 a {
-                    text-decoration: none; // Убираем подчёркивание у ссылок
-                    color: inherit; // Наследуем цвет текста
+                    text-decoration: none; 
+                    color: inherit; 
                     font-size: 16px;
 
                     &:hover {
-                        color: $main-color; // Изменение цвета при наведении
+                        color: $main-color;
                     }
                 }
 
