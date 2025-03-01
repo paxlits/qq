@@ -1,12 +1,11 @@
-import AppHendler from "../appHeader/appHendler";
+import AppHeader from "../appHeader/appHender";
 
 
 function App(){
     return(
         <div className="app">
-            <AppHendler/>
-        </div>
-        
+            <AppHeader/>
+        </div> 
     )
 }
 

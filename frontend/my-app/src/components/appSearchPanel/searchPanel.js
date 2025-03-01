@@ -1,5 +1,7 @@
 import { Component } from 'react';
 
+import searchIkon from '../../images/Icon.png';
+
 import '../appSearchPanel/searchPanel.scss';
 
 class SearchPanel extends Component{
@@ -20,15 +22,17 @@ class SearchPanel extends Component{
 
     render(){
         return (
-            <input
-                type="text"
-                className="form-control search-input"
-                placeholder="Нйти сотрудника"
-                value ={this.state.term}
-                onChange={this.onUpdateSearch}/>
-
-        )
-    }
+            <div className="form-control search-input">
+        <input
+          type="search"
+          placeholder="Найти сотрудника" 
+          value={this.state.term}
+          onChange={this.onUpdateSearch}
+        />
+        <img src={searchIkon} alt="Иконка поиска" />
+      </div>
+    );
+  }
 }
 
 export default SearchPanel;
