@@ -5,7 +5,7 @@ import menu from "../../images/free-icon-menu-2976215.png";
 
 import SearchPanel from "../appSearchPanel/searchPanel";
 
-import "../appHeader/appHender.scss";
+import "./appHender.scss";
 
 const AppHeader = () => {
     return(
@@ -35,7 +35,7 @@ const AppHeader = () => {
                                 <a href="/cart">Корзина</a></li>
                         </ul>
                     </nav>
-            </header>
+        </header>
     )
 
 }

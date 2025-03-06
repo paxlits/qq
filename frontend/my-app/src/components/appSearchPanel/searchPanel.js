@@ -22,7 +22,7 @@ class SearchPanel extends Component{
 
     render(){
         return (
-            <div className="form-control search-input">
+        <div className="form-control search-input">
         <input
           type="search"
           placeholder="Найти сотрудника" 

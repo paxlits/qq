@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "nouislider": "^15.8.1",
+    "react-nouislider": "^2.0.1"
+  }
+}
