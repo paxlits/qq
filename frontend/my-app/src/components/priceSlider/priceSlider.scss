@@ -1,13 +1,13 @@
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding: 0 20px;
+  max-width: 208px;
   height: 100%;
+  max-height: 42px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 
   .wrapper {
     background-color: #fff;
@@ -27,7 +27,7 @@
   }
 
   &--h-center {
-    justify-content: center;
+    justify-content: right
   }
 
   &--v-center {
@@ -50,17 +50,17 @@
   }
 
   &__field {
-    width: 100px;
-    padding: 10px;
-    border-radius: 5px;
+    width: 49px;
+    padding: 20px;
+    border-radius: none;
     background-color: #fff;
-    border: 1px solid #bbb;
-    font-size: 20px;
+    border: none;
+    font-size: 15px;
     text-align: center;
     transition: border-color 0.3s ease;
 
     &:focus {
-      border-color: #4285f4;
+      border-color: #2C2C2C;
       outline: none;
     }
   }
@@ -79,13 +79,13 @@
     height: 7px;
 
     .noUi-handle {
-      width: 30px;
-      height: 30px;
+      width: 16px;
+      height: 16px;
       top: -12px;
       right: -15px;
       border-radius: 50%;
       border: none;
-      background: #4285f4;
+      background: #2C2C2C;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
       &::before,
@@ -95,7 +95,7 @@
     }
 
     .noUi-connect {
-      background: #4285f4;
+      background: #E6E6E6;
     }
   }
 }

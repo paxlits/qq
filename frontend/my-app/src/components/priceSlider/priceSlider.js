@@ -1,7 +1,7 @@
 import "./priceSlider.scss";
 import React, { useEffect, useRef, useState } from 'react';
 import noUiSlider from 'nouislider';
-import 'nouislider/dist/nouislider.css';
+import '../../style/nouislider.scss';
 
 const PriceSlider = () => {
   const sliderRef = useRef(null);
@@ -66,7 +66,7 @@ const PriceSlider = () => {
               onChange={handleMinChange}
               placeholder="от"
             />
-            <span className="slider__separator">—</span>
+            <span className="slider__separator">-</span>
             <input
               type="number"
               className="slider__field"
