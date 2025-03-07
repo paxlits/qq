@@ -5,11 +5,10 @@ import '../../style/nouislider.scss';
 
 const PriceSlider = () => {
   const sliderRef = useRef(null);
-  const [minValue, setMinValue] = useState(200);
-  const [maxValue, setMaxValue] = useState(800);
+  const [minValue, setMinValue] = useState(0);
+  const [maxValue, setMaxValue] = useState(1000);
   const containerRef = useRef(null);
 
-  // Инициализация слайдера
   useEffect(() => {
     if (containerRef.current) {
       sliderRef.current = noUiSlider.create(containerRef.current, {
@@ -17,7 +16,7 @@ const PriceSlider = () => {
         connect: true,
         range: {
           min: 0,
-          max: 1000
+          max: 100000
         },
         format: {
           to: value => Math.round(value),
@@ -25,7 +24,6 @@ const PriceSlider = () => {
         }
       });
 
-      // Обработчик обновления значений
       sliderRef.current.on('update', (values) => {
         const [min, max] = values.map(Number);
         setMinValue(min);
@@ -40,7 +38,6 @@ const PriceSlider = () => {
     };
   }, []);
 
-  // Обработчики изменения инпутов
   const handleMinChange = (e) => {
     const value = Math.min(Number(e.target.value), maxValue);
     setMinValue(value);

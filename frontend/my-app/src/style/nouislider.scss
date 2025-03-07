@@ -78,13 +78,13 @@
 /* Slider size and handle placement;
  */
 .noUi-horizontal {
-  height: 18px;
+  height: 8px;
 }
 .noUi-horizontal .noUi-handle {
   width: 16px;
   height: 16px;
-  right: -17px;
-  top: -6px;
+  right: -9px;
+  top: -4px;
 }
 .noUi-vertical {
   width: 18px;
@@ -99,9 +99,7 @@
   left: -17px;
   right: auto;
 }
-/* Styling;
- * Giving the connect element a border radius causes issues with using transform: scale
- */
+
 .noUi-target {
   background: #FAFAFA;
   border-radius: 4px;
@@ -109,7 +107,7 @@
   box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
 }
 .noUi-connects {
-  border-radius: 3px;
+  border-radius: 10px;
 }
 .noUi-connect {
   background: #3FB8AF;
